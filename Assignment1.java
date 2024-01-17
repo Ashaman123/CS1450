@@ -112,7 +112,6 @@ public class Assignment1 {
 		
 		inputFile.close();
 		
-		System.out.println("Test");
 	}
 
 }
