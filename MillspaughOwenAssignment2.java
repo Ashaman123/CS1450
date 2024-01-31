@@ -38,17 +38,21 @@ public class MillspaughOwenAssignment2 {
             arrayCount++;
         }
 
-        // print table headers
-        System.out.printf("Name\t\tType\t\tDays Tracked\t\tMiles Traveled\t\tThreats to Survival\n");
+     // print table headers
+        System.out.println("-----------------------------------------------------------------------------------------------------");
+        System.out.printf("%-10s\t%-15s\t%-15s\t%-15s\t\t%s\n", "Name", "Type", "Days Tracked", "Miles Traveled", "Threats to Survival");
+        System.out.println("-----------------------------------------------------------------------------------------------------");
+
 
         for (SeaTurtle turtle : turtleArray) {
             if (turtle != null) {  // Check for null, as the array may have unused elements
-                System.out.printf("%s\t\t%s\t\t%d\t\t%.1f\t\t%s\n",
+                System.out.printf("%-10s\t%-15s\t%-15d\t%-15.2f\t\t%s\n",
                         turtle.getName(), turtle.getType(), turtle.getDaysTracked(), turtle.getMilesTraveled(),
                         turtle.getSurvivalThreat());
             }
         }
     }
+    
 }
 
 class SeaTurtle {
